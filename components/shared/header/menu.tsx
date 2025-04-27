@@ -8,6 +8,7 @@ import { ModeToggle } from "./mode-toggle";
 import { EllipsisVertical, ShoppingCart, UserIcon } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
+import UserButton from "./user-button";
 
 
 const Menu = () => {
@@ -20,11 +21,7 @@ const Menu = () => {
             <ShoppingCart /> Cart
           </Link>
         </Button>
-        <Button asChild>
-          <Link href="/sign-in">
-            <UserIcon /> Sign In
-          </Link>
-        </Button>
+        <UserButton/>
       </nav>
       <Sheet>
         <SheetTrigger className="align-middle">
